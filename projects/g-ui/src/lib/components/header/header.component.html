@@ -1,0 +1,6 @@
+<div class="header" [ngClass]="{'primary': color==='primary', 'secondary': color==='secondary',
+'raised': raised}" [style]="{'background-color': (color==='primary'||color==='secondary')?'':color}">
+  <div class="content">
+    <ng-content></ng-content>
+  </div>
+</div>

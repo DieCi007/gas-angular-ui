@@ -1,7 +1,5 @@
 /*
  * Public API Surface of g-ui
  */
-
-export * from './lib/g-ui.service';
-export * from './lib/g-ui.component';
-export * from './lib/g-ui.module';
+export * from './lib/components/header/header.component';
+export * from './lib/components/header/header.module';

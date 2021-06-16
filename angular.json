@@ -7,13 +7,21 @@
       "projectType": "library",
       "root": "projects/g-ui",
       "sourceRoot": "projects/g-ui/src",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/g-ui/tsconfig.lib.json",
-            "project": "projects/g-ui/ng-package.json"
+            "project": "projects/g-ui/ng-package.json",
+            "styles": [
+              "projects/g-ui/src/styles.scss"
+            ]
           },
           "configurations": {
             "production": {

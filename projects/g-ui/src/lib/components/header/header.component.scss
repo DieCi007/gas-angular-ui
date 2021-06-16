@@ -1,0 +1,39 @@
+@import "../../theme/_variables.scss";
+
+.header {
+  height: 4rem;
+  width: 100%;
+
+  .content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato';
+    background: radial-gradient(circle at 75% 190%, #fafafa30, transparent 15%),
+    radial-gradient(circle at 25% -155%, #fafafa30, transparent 25%),
+    radial-gradient(circle at 150% 50%, #fafafa40, transparent 55.5%);
+  }
+
+  .primary {
+    background: $black;
+  }
+
+  &.raised {
+    box-shadow: 0 2px 5px 0 $shadow;
+  }
+
+  &.secondary {
+    background: $primary-dark;
+
+    .content {
+      height: 100%;
+      width: 100%;
+      background: radial-gradient(circle at 75% 180%, #00000030, transparent 14%),
+      radial-gradient(circle at 25% -155%, #00000030, transparent 25%),
+      radial-gradient(circle at 150% 50%, #000000, transparent 40%);
+    }
+
+  }
+}
