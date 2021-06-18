@@ -9,5 +9,6 @@ export class HeaderComponent {
 
   @Input() color = '';
   @Input() raised = true;
+  @Input() height = '';
 
 }

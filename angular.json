@@ -18,10 +18,7 @@
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/g-ui/tsconfig.lib.json",
-            "project": "projects/g-ui/ng-package.json",
-            "styles": [
-              "projects/g-ui/src/styles.scss"
-            ]
+            "project": "projects/g-ui/ng-package.json"
           },
           "configurations": {
             "production": {
