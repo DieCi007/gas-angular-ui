@@ -6,6 +6,7 @@ import { SunsetComponent } from './sunset.component';
 
 @NgModule({
   declarations: [SunsetComponent],
+  exports: [SunsetComponent],
   imports: [
     CommonModule
   ]
