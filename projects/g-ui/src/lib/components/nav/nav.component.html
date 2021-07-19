@@ -1,0 +1,12 @@
+<div class="sidenav-container">
+  <div class="sidenav"
+       [style]="{'width': sidebarWidth,
+       'height': sidebarHeight,
+       'top': position==='left'?'0':null,'bottom':position==='bottom'?'0':null}">
+    <ng-content select="[sidenav]"></ng-content>
+  </div>
+  <div class="sidenav-content"
+       [style]="{'margin-left': sidebarMargin}">
+    <ng-content select="[content]"></ng-content>
+  </div>
+</div>

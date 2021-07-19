@@ -10,6 +10,7 @@ export class ModalComponent {
   @Input() borderRadius = '20px';
   @Input() height: string;
   @Input() width: string;
+  @Input() maxWidth: string;
   @Input() resizable = false;
   @Input() visible: boolean;
   @Output() visibleChange = new EventEmitter<boolean>();

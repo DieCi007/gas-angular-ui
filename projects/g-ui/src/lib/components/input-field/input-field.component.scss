@@ -32,6 +32,7 @@
     border-bottom: 1px solid $black;
     padding: 5px 25px 5px 0;
     color: $gray-input;
+    width: 100%;
 
     &:disabled {
       display: none;
@@ -66,3 +67,14 @@
   }
 }
 
+@media #{$smartphone} {
+  .input-control {
+    span {
+      font-size: .9rem;
+    }
+
+    input, .disabled-view {
+      font-size: 1.1rem;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../theme/variables";
+
+.sidenav-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  .sidenav {
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: 0 2px 5px 0 $shadow;
+  }
+
+  .sidenav-content {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+}
+

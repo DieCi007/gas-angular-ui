@@ -7,11 +7,18 @@
       "lib",
       "camelCase"
     ],
+    "no-string-literal": false,
     "component-selector": [
       true,
       "element",
       "g",
       "kebab-case"
-    ]
+    ],
+    "variable-name": {
+      "options": [
+        "ban-keywords",
+        "allow-pascal-case"
+      ]
+    }
   }
 }
