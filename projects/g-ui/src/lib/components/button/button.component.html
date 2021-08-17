@@ -1,0 +1,8 @@
+<div class="button-container" [style]="{'width': width}">
+  <button (click)="onButtonClicked($event)" class="button"
+          [type]="type" [style]="{'height': height}"
+          [ngClass]="color === 'primary' ? 'primary' : 'secondary'">
+    <span [ngClass]="color === 'primary' ? 'primary' : 'secondary'">
+      {{label}}</span>
+  </button>
+</div>

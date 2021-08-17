@@ -21,3 +21,6 @@ export * from './lib/components/nav/nav.module';
 
 export * from './lib/components/card/card.component';
 export * from './lib/components/card/card.module';
+
+export * from './lib/components/button/button.component';
+export * from './lib/components/button/button.module';

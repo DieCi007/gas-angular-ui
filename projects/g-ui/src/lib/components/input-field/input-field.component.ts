@@ -10,7 +10,7 @@ export class InputFieldComponent {
   @Input() label: string;
   @Input() form: FormGroup;
   @Input() controlName: string;
-  @Input() type: 'text' | 'password';
+  @Input() type: 'text' | 'password' = 'text';
 
   get control(): FormControl {
     return this.form?.get(this.controlName) as FormControl;
