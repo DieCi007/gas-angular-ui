@@ -33,7 +33,7 @@ export class NavComponent implements OnInit, OnDestroy {
       distinctUntilChanged(),
       tap(evt => {
         this._sideBarSize = evt.target['innerWidth'] < 812 ?
-          '200px' : this.defaultSidebarWith;
+          '200px' : this.defaultSidebarWith || '300px';
       })
     ).subscribe();
   }
