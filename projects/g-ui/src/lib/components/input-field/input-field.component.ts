@@ -10,6 +10,8 @@ export class InputFieldComponent {
   @Input() label: string;
   @Input() form: FormGroup;
   @Input() controlName: string;
+  @Input() autofocus = false;
+  @Input() autocomplete: string;
   @Input() type: 'text' | 'password' = 'text';
 
   get control(): FormControl {

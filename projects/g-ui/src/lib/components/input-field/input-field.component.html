@@ -1,7 +1,8 @@
 <label class="input-control"
        [ngClass]="{'mod-error': control.invalid && (control.dirty || control.touched)}">
   <span>{{label}}</span>
-  <input [type]="type" [formControl]="control" [formGroup]="form"/>
+  <input [type]="type" [formControl]="control" [formGroup]="form" [autofocus]="autofocus"
+         [autocomplete]="autocomplete"/>
   <label class="disabled-view">{{control.value}}</label>
   <label class="error-border"></label>
   <ng-container *ngIf="control.invalid && (control.dirty || control.touched)">
