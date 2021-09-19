@@ -11,7 +11,7 @@ export class ButtonComponent {
   @Output() clicked = new EventEmitter<void>();
   @Input() width = '100%';
   @Input() height = '2rem';
-  @Input() color: 'primary' | 'secondary' = 'primary';
+  @Input() color: 'primary' | 'secondary' | 'danger' | string = 'primary';
 
   onButtonClicked(event: MouseEvent): void {
     this.clicked.emit();

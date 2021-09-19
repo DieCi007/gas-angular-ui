@@ -1,8 +1,12 @@
 <div class="button-container" [style]="{'width': width}">
   <button (click)="onButtonClicked($event)" class="button"
           [type]="type" [style]="{'height': height}"
-          [ngClass]="color === 'primary' ? 'primary' : 'secondary'">
-    <span [ngClass]="color === 'primary' ? 'primary' : 'secondary'">
+          [ngClass]="{primary: color === 'primary',
+    secondary: color === 'secondary', danger: color === 'danger'}"
+          [ngStyle]="{backgroundColor: !['primary', 'secondary', 'danger']
+          .includes(color) && color}">
+    <span [ngClass]="{primary: color === 'primary',
+    secondary: color === 'secondary', danger: color === 'danger'}">
       {{label}}</span>
   </button>
 </div>

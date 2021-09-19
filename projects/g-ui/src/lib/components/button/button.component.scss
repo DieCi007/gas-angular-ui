@@ -24,6 +24,11 @@
       color: white;
     }
 
+    &.danger {
+      background-color: $danger;
+      color: white;
+    }
+
     &:active {
       top: 1px;
       box-shadow: 0 1px 7px 0 $shadow-light;
@@ -35,9 +40,14 @@
       justify-content: center;
       height: 100%;
       width: 100%;
+      padding: 0 .5rem;
       overflow: hidden;
 
       &.primary {
+        background: radial-gradient(circle at 10% 50%, #0001, transparent 43%);
+      }
+
+      &.danger {
         background: radial-gradient(circle at 10% 50%, #0001, transparent 43%);
       }
 
