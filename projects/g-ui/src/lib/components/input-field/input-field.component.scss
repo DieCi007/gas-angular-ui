@@ -2,7 +2,7 @@
 
 .input-control {
   position: relative;
-  margin: .5rem 0;
+  margin: .8rem 0 0 .5rem;
   display: block;
 
   .error-label {
@@ -16,6 +16,16 @@
     display: block;
     text-transform: uppercase;
     color: $black;
+    position: absolute;
+    transition: all 100ms linear;
+  }
+
+  input ~ span {
+    top: .7rem;
+  }
+
+  input.normal ~ span {
+    top: .5rem;
   }
 
   .disabled-view {
@@ -28,11 +38,15 @@
     font-weight: 500;
     background: transparent;
     border: none;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     border-bottom: 1px solid $black;
-    padding: 5px 25px 5px 0;
+    padding: 5px 25px 2px 0;
     color: $gray-input;
     width: 100%;
+
+    &.normal {
+      font-size: 1.1rem;
+    }
 
     &:disabled {
       display: none;
@@ -46,6 +60,14 @@
   input:disabled ~ .disabled-view {
     display: block;
     border-bottom: none;
+  }
+
+  input:focus ~ span, input.active ~ span {
+    transform: translateY(-1.5rem);
+  }
+
+  input.normal:focus ~ span, input.normal.active ~ span {
+    transform: translateY(-1.2rem);
   }
 
   .error-border {

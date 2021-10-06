@@ -13,6 +13,8 @@ export class InputFieldComponent {
   @Input() autofocus = false;
   @Input() autocomplete: string;
   @Input() type: 'text' | 'password' = 'text';
+  @Input() font: 'normal' | 'large' = 'large';
+  @Input() width = '100%';
 
   get control(): FormControl {
     return this.form?.get(this.controlName) as FormControl;

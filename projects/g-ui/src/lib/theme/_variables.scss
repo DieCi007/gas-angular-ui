@@ -1,4 +1,6 @@
 $primary: #ffd54f;
+$primary-transparent: #ffd54f30;
+$primary-less-transparent: #ffd54f80;
 $primary-light: #ffff81;
 $primary-dark: #c8a415;
 $secondary: #4e342e;
@@ -13,6 +15,8 @@ $danger: #d0021b;
 $success: #43a047;
 $shadow-light: rgb(0 0 0 / 18%);
 $shadow: rgb(0 0 0 / 30%);
+$divider: rgba(0, 0, 0, 0.1);
+$disabled: #c7c7c7;
 
 $smartphone: "only screen and (min-width: 320px) and (max-width: 812px)";
 $tablet: "only screen and (min-width: 813px) and (max-width: 1024)";
