@@ -29,9 +29,13 @@
       color: white;
     }
 
-    &:active {
+    &:active:not(:disabled) {
       top: 1px;
       box-shadow: 0 1px 7px 0 $shadow-light;
+    }
+
+    &:disabled {
+      background-color: $disabled;
     }
 
     span {

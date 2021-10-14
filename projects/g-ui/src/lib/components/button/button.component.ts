@@ -12,8 +12,11 @@ export class ButtonComponent {
   @Input() width = '100%';
   @Input() height = '2rem';
   @Input() color: 'primary' | 'secondary' | 'danger' | string = 'primary';
+  @Input() disabled = false;
 
   onButtonClicked(event: MouseEvent): void {
-    this.clicked.emit();
+    if (!this.disabled) {
+      this.clicked.emit();
+    }
   }
 }

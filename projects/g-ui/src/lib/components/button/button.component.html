@@ -1,5 +1,5 @@
 <div class="button-container" [style]="{'width': width}">
-  <button (click)="onButtonClicked($event)" class="button"
+  <button (click)="onButtonClicked($event)" class="button" [disabled]="disabled"
           [type]="type" [style]="{'height': height}"
           [ngClass]="{primary: color === 'primary',
     secondary: color === 'secondary', danger: color === 'danger'}"
