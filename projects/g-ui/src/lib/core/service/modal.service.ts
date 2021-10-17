@@ -1,4 +1,4 @@
-import { ComponentRef, EventEmitter, Injectable, InjectionToken, Injector } from '@angular/core';
+import { EventEmitter, Injectable, Injector } from '@angular/core';
 import { ComponentType, GlobalPositionStrategy, Overlay, OverlayRef } from '@angular/cdk/overlay';
 import { tap } from 'rxjs/operators';
 import { ComponentPortal } from '@angular/cdk/portal';
@@ -67,7 +67,7 @@ export class ModalService {
   handleError(error: IErrorResponse): IAction[] {
     return this.openDefaultModal({
       title: `Errore`,
-      primaryText: 'Abbiamo incontrato un problema. Contatta l\'assistenza con il messaggio:',
+      primaryText: 'Abbiamo incontrato un problema. Se l\'errore persiste contatta l\'assistenza con il messaggio:',
       secondaryText: error.error + ': ' + error.message,
       actions: [{
         buttonColor: 'secondary',

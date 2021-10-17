@@ -67,4 +67,8 @@ export class NavComponent implements OnInit, OnDestroy {
     return this.isSidebarOpen ? this.sideBarSize : '0';
   }
 
+  onOverlayClick(): void {
+    this.toggle();
+  }
+
 }
