@@ -35,6 +35,18 @@ export * from './lib/components/table/table.component';
 export * from './lib/components/table/table.module';
 export * from './lib/components/table/model';
 
+export * from './lib/components/select-input/select-input.component';
+export * from './lib/components/select-input/select-input.module';
+
+export * from './lib/components/fab/fab.component';
+export * from './lib/components/fab/fab.module';
+
+export * from './lib/components/checkbox/checkbox.component';
+export * from './lib/components/checkbox/checkbox.module';
+
+export * from './lib/components/calendar/calendar.component';
+export * from './lib/components/calendar/calendar.module';
+
 export * from './lib/core/core.module';
 export * from './lib/core/pipe/trust-html.pipe';
 export * from './lib/core/service/breakpoint.service';

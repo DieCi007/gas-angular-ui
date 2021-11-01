@@ -10,6 +10,7 @@ import { DefaultModalComponent } from '../component/default-modal/default-modal.
 })
 export class ModalService {
   private overlayReference: OverlayRef[] = [];
+  contactMail: string;
 
   constructor(private overlay: Overlay) {
   }
@@ -67,8 +68,11 @@ export class ModalService {
   handleError(error: IErrorResponse): IAction[] {
     return this.openDefaultModal({
       title: `Errore`,
-      primaryText: 'Abbiamo incontrato un problema. Se l\'errore persiste contatta l\'assistenza con il messaggio:',
-      secondaryText: error.error + ': ' + error.message,
+      html: '<div style="font-size: 1.1rem; font-weight: 500; padding: .5rem; text-align: center">' +
+        'Abbiamo incontrato un problema. Se l\'errore persiste ' +
+        '<a href=mailto:"' + this.contactMail + '">contatta l\'amministratore</a> indicando l\'errore:</div>' +
+        '<div style="text-align: center; ' +
+        'letter-spacing: 1.2px; padding: 0 .5rem">' + error.error + ': ' + error.message + '</div>',
       actions: [{
         buttonColor: 'secondary',
         buttonLabel: 'Indietro',

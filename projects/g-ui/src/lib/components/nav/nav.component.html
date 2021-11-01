@@ -5,9 +5,9 @@
        'top': position==='left'?'0':null,'bottom':position==='bottom'?'0':null}">
     <ng-content select="[sidenav]"></ng-content>
   </div>
-  <div class="sidenav-overlay" *ngIf="this.isSidebarOpen"
+  <div class="sidenav-overlay" *ngIf="isSidebarOpen"
        (click)="onOverlayClick()"></div>
-  <div class="sidenav-content"
+  <div class="sidenav-content" [class.disabled]="isSidebarOpen"
        [style]="{'margin-left': sidebarMargin}">
     <ng-content select="[content]"></ng-content>
   </div>

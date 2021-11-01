@@ -21,6 +21,11 @@
     display: flex;
     flex-direction: column;
     transition: 0.5s;
+
+    &.disabled {
+      overflow: hidden;
+      pointer-events: none;
+    }
   }
 
   .sidenav-overlay {
