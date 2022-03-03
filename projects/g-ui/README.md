@@ -1,6 +1,9 @@
-# GUi
+# G-UI
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+It contains utility services and common components used for my project [GasAdvisor](https://www.gasadvisor.it). 
+
+This was a solution for getting used with creating Angular libraries and not using duplicated components/code in my frontend applications [GasAdvisor | Admin Console](https://github.com/DieCi007/gas-console) and [GasAdvisor | Frontend](https://github.com/DieCi007/gas-frontend) 
 
 ## Code scaffolding
 
@@ -11,14 +14,3 @@ Run `ng generate component component-name --project g-ui` to generate a new comp
 
 Run `ng build g-ui` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Publishing
-
-After building your library with `ng build g-ui`, go to the dist folder `cd dist/g-ui` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test g-ui` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
